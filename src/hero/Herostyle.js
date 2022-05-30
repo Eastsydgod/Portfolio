@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 export const Main = styled.div`
   height: 500px;
   background-color: #047aed;
@@ -53,4 +53,4 @@ export const Main = styled.div`
     margin-top: 200px;
     width: 80%;
   }
-`;
+`

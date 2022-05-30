@@ -1,7 +1,7 @@
-import Contact from "./contact/contact";
-import { Routes, Route } from "react-router-dom";
-import Home from "./home/home";
-import Footer from "./Footer/Footer";
+import Contact from './contact/contact'
+import { Routes, Route } from 'react-router-dom'
+import Home from './home/home'
+import Footer from './Footer/Footer'
 
 export default function App() {
   return (
@@ -12,5 +12,5 @@ export default function App() {
       </Routes>
       <Footer />
     </div>
-  );
+  )
 }
