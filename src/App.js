@@ -6,10 +6,11 @@ import Footer from './Footer/Footer'
 export default function App() {
   return (
     <div className="App">
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Contact" element={<Contact />} />
-      </Routes>
+      </Routes> */}
+      <Home />
       <Footer />
     </div>
   )
