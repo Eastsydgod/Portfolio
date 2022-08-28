@@ -1,13 +1,11 @@
 import React from 'react'
-import { Main } from './Herostyle.js'
+import { Main } from './style.js'
 import '../images/hero.jpg'
-import NavBar from './Navbar/Nav.js'
+import { GitHub, LinkedIn, Twitter } from '@mui/icons-material'
 
 function Hero() {
   return (
-    <Main id="home">
-      <NavBar />
-
+    <Main id="Home">
       <div className="text">
         <h1>Web Developer</h1>
         <p>
@@ -16,6 +14,11 @@ function Hero() {
           itaque maiores totam accusantium laudantium, neque nihil corrupti
           nostrum? Harum, nihil eius! Iste, quam ipsa!
         </p>
+      </div>
+      <div className='icons'>
+        <GitHub/>
+        <LinkedIn/>
+        <Twitter/>
       </div>
     </Main>
   )

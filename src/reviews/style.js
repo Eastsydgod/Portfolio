@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const Main = styled.div`
   padding: 50px 100px;
+  background-color: #e8e8e8;
   @media (max-width: 800px) {
     padding: 20px;
   }

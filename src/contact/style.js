@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const Main = styled.div`
   padding: 20px;
+  background-color: #fff;
   @media (max-width: 800px) {
     padding: 0px;
     margin: 0px;
@@ -44,7 +45,6 @@ export const Main = styled.div`
       }
     }
     .right {
-      background-color: #f0f0f0;
       padding: 34px;
       width: 55%;
       position: relative;
@@ -56,15 +56,18 @@ export const Main = styled.div`
       .flex-span {
         width: 100%;
         display: flex;
+        span{
+          width: 49%;
+        }
       }
+    
       input {
-        width: 91%;
-        /* margin-right: 10px; */
-      }
-      input {
+      background-color: #f0f0f0;
         height: 30px;
+        margin: 20px 0px;
         width: 95%;
         outline: none;
+        border: none;
         font-size: 16px;
       }
       .review--area {

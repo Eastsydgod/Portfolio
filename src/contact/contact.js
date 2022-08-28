@@ -1,16 +1,10 @@
 import { Main } from "./style.js";
-import { Link } from "react-router-dom";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 function Contact() {
   return (
-    <Main id='Contactus'>
-      <Link to="/" className="home">
-        <ArrowBackIosNewIcon />
-        <h2>HOME</h2>
-      </Link>
+    <Main id='Contact'>
       <div className="container">
         <div className="left">
           <h1>WELCOME</h1>
@@ -41,26 +35,20 @@ function Contact() {
           <form>
             <h2>Send us a message</h2>
             <span>
-              <p>Name</p>
-              <input type="text" />
+              <input type="text" placeholder="Name"/>
             </span>
 
             <div className="flex-span">
               <span>
-                <p>Phone Number</p>
-                <input type="tel" />
+                <input type="tel" placeholder="Phone Number"/>
               </span>
               
               <span>
-                <p>E-email Address</p>
-                <input type="email" />
+                <input type="email" placeholder="E-email Address"/>
               </span>
             </div>
 
-            <span>
-              <p>Company Name</p>
-              <input type="text" />
-            </span>
+          
             <span>
               <p>Message</p>
               <textarea

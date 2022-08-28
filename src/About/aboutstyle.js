@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const Main = styled.div`
   display: flex;
+  background: #e8e8e8;
   justify-content: space-between;
   @media (max-width: 800px) {
     display: flex;

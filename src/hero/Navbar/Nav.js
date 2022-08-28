@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
-import AnchorIcon from '@mui/icons-material/Anchor'
 import { Style } from './NavStyle.js'
-import { Menu } from '@mui/icons-material'
-// import { NavLink } from 'react-router-dom'
+import { Cancel, Menu } from '@mui/icons-material'
 
 export default function NavBar() {
   const [Toggle, setToggle] = useState(false)
@@ -14,26 +12,45 @@ export default function NavBar() {
     <Style>
       <nav>
         <div>
-          <h2>JEMIENACHUKWU</h2> <AnchorIcon />
+          <h3>Jemienachukwu</h3>
         </div>
+
+
         <div className="navItem">
-          <a href="#Home">Home</a>
-          <a href="#About">About</a>
-          <a href="#Services">Services</a>
-          <a href="#">Projects</a>
+          
+           <a href="#Home">
+            <div>
+               Home
+            </div>
+           </a>
+         <a href="#About">
+            <div>
+              About
+            </div>
+          </a>
+        
+          <a href="#Skill"> <div>Skill</div> </a>
+          
+         
+           <a href="#"><div>Projects  </div></a>
+       
+         
+         <a href="#Contact"><div>Contact me</div></a>
+
+         
         </div>
-        <div className="Ham">
-          <Menu onClick={HandelClick} />
+        <div className="Ham">{
+          Toggle? 
+         (<Cancel onClick={HandelClick}/>) : (<Menu onClick={HandelClick} />) }
         </div>
       </nav>
       {Toggle && (
         <div className="TemporaryDrawer">
-          <a href="#Home">Home</a>
-          <a href="#About">About</a>
-          <a href="#Services">Services</a>
-          <a href="#">Projects</a>
-          {/* <p>Home</p>
-          <p>Home</p> */}
+               <a href="#Home">Home</a>
+              <a href="#About">About</a>
+             <a href="#Skill">Skill</a> 
+            <a href="#">Projects</a>
+           <a href="#">contact me</a>
         </div>
       )}
     </Style>

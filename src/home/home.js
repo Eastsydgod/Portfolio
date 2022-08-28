@@ -1,18 +1,27 @@
 import About from '../About/about'
 import Hero from '../hero/hero'
-import Languages from '../Languages/languages'
+import Skills from '../skills/skills'
 import Card from '../reviews/card'
-import Services from '../Services/services'
+// import Services from '../Services/services'
+import Contact from '../contact/contact'
 import { Main } from './style.js'
+import NavBar from '../hero/Navbar/Nav'
+
+
 
 function Home() {
   return (
     <Main>
+      <span  className='nav'>
+      <NavBar/>
+      </span>
+     
       <Hero />
       <About />
-      <Languages />
-      <Services />
+      <Skills />
+      {/* <Services /> */}
       <Card />
+      <Contact />
     </Main>
   )
 }
