@@ -1,15 +1,13 @@
 import styled from 'styled-components'
 export const Style = styled.div`
-/* color: #000; */
 background: rgba(255, 255, 255, 0);
-border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5.3px);
 -webkit-backdrop-filter: blur(5.3px);
   nav {
     height: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0 20px;
     div {
@@ -47,25 +45,34 @@ backdrop-filter: blur(5.3px);
       }
     }
     .Ham {
-      display: none;
+      /* display: none; */
+      visibility: hidden;
       @media (max-width: 650px) {
-        display: block;
+        /* display: block; */
+        visibility: visible;
       }
     }
   }
   .TemporaryDrawer {
+    padding:20px;
     display: flex;
+    flex-direction:column;
     background-color: #fff;
-    height: 60px;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 10px;
-    align-items: center;
-    color: #000;
-    justify-content: space-evenly;
+    width: 100%;
     a {
       text-decoration: none;
       color: #000;
+      margin-bottom: 18px;
+      border-bottom: #e8e8e8 1px solid;
+
+      .contact{
+        border: #e8e8e8 1px solid;
+        height: 30px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 `

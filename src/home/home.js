@@ -6,6 +6,7 @@ import Card from '../reviews/card'
 import Contact from '../contact/contact'
 import { Main } from './style.js'
 import NavBar from '../hero/Navbar/Nav'
+import Projects from '../projects/projects'
 
 
 
@@ -19,6 +20,7 @@ function Home() {
       <Hero />
       <About />
       <Skills />
+      <Projects/>
       {/* <Services /> */}
       <Card />
       <Contact />

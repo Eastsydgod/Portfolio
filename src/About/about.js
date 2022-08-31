@@ -1,11 +1,11 @@
 import { Main } from "./aboutstyle";
-import image from "../images/IMG-20220502-WA0038.jpg";
+import image from "./IMG-20220502-WA0038.jpg";
 function About() {
   return (
     <Main id='About'>
       <div className="Texts">
         <div className="texts">
-          <h1>ABOUT</h1>
+          <h1><span style={{ color: "coral" }}>About</span> Me </h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
             dolorem sint, officia optio modi minima nam porro, exercitationem

@@ -1,5 +1,5 @@
 import { Main } from "./style.js";
-import image from "../images/IMG-20220502-WA0038.jpg";
+import image from "./IMG-20220502-WA0038.jpg";
 export default function Card() {
   return (
     <Main className="cards">
