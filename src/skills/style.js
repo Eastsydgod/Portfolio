@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const Main = styled.div`
-background-color: #fff;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,30 +14,21 @@ background-color: #fff;
       width: 80%;
     }
   }
-  
-  .icons {
+  .flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
+    width: 37%;
     @media (max-width: 800px) {
-      
+      width: 80%;
     }
-    .container{
-      margin: 0 10px;
-      text-align: center;
-      .icon{
-        width:80px;
-        height: 80px;
-        background-color: #87cefa;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img{
-          width :70%;
-          
-        }
-      }
+    .icon {
+      margin: 5px;
+      border-radius: 5px;
+      height: 40px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
     }
-    
   }
 `;

@@ -5,7 +5,7 @@ import { Cancel, Menu } from "@mui/icons-material";
 export default function NavBar() {
   const [Toggle, setToggle] = useState(false);
   function HandelClick() {
-    setToggle((prevset) => !prevset);
+    setToggle(!Toggle);
   }
 
   return (
