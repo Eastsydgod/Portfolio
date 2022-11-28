@@ -1,5 +1,10 @@
-.nav{
-    position: sticky;
-    top: 0;
-    z-index: 1;
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.App {
+  @media (min-width: 400px) {
+    display: none;
+  }
 }

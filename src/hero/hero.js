@@ -1,6 +1,6 @@
 import React from "react";
 import { Main } from "./style.js";
-import { GitHub, LinkedIn, Twitter } from "@mui/icons-material";
+import { GitHub, LinkedIn, Mail } from "@mui/icons-material";
 
 function Hero() {
   return (
@@ -9,7 +9,7 @@ function Hero() {
         <p className="name">Hi, i'm jemienachukw</p>
         <h1>
           Build Your Website <br />
-          With us
+          With me
         </h1>
         <div className="bottom-text">
           <p>
@@ -21,14 +21,24 @@ function Hero() {
         </div>
       </div>
       <div className="icons">
-        <a href="https://github.com/Jemienachukwu" style={{ color: "#000" }}>
+        <a
+          href="https://github.com/Jemienachukwu"
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: "#000" }}
+        >
           <GitHub />
         </a>
-        <a href="https://github.com/Jemienachukwu" style={{ color: "#000" }}>
+        <a
+          href="https://github.com/Jemienachukwu"
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: "#000" }}
+        >
           <LinkedIn />
         </a>
-        <a href="https://github.com/Jemienachukwu" style={{ color: "#000" }}>
-          <Twitter />
+        <a href="mailto:jemieofoegbu@gmail.com" style={{ color: "#000" }}>
+          <Mail />
         </a>
       </div>
     </Main>

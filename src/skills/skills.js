@@ -7,9 +7,13 @@ function Skills() {
   const skill = [
     { text: "javascript", color: "teal" },
     { text: "CSS", color: "coral" },
-    { text: "React", color: "#e8e8e8" },
-    { text: "mongoDB", color: "peach" },
+    { text: "HTML", color: "dodgerBlue" },
+    { text: "React", color: "#61DBFB" },
+    { text: "mongoDB", color: "lime" },
+    { text: "Bootstrap", color: "#563d7c" },
+    { text: "APIs", color: "green" },
     { text: "Redux", color: "coral" },
+    { text: "Nextjs", color: "coral" },
   ];
   return (
     <Main id="Skill">

@@ -12,6 +12,7 @@ export const Main = styled.div`
     width: 60%;
     @media (max-width: 800px) {
       width: 80%;
+      text-align: center;
     }
   }
   .flex {

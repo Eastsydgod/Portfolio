@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { Style } from "./NavStyle.js";
 import { Cancel, Menu } from "@mui/icons-material";
-
+import { useParams } from "react-router-dom";
 export default function NavBar() {
   const [Toggle, setToggle] = useState(false);
   function HandelClick() {
     setToggle(!Toggle);
   }
+
+  let { link } = useParams();
 
   return (
     <Style>

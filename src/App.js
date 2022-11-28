@@ -20,7 +20,7 @@ import Footer from "./Footer/Footer";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <span className="nav">
         <NavBar />
       </span>
@@ -31,7 +31,7 @@ function App() {
       <Card />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 

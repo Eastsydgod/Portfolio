@@ -46,8 +46,8 @@ const Projects = () => {
               <div>{item.name}</div>
             </div>
             <p>{item.text}</p>
-            <Visibility className="icon" />
-            <a href={item.link}>
+            <Visibility className="icon" target="_blank" rel="noreferrer" />
+            <a href={item.link} target="_blank" rel="noreferrer">
               <GitHub className="icon" />
             </a>
           </div>
