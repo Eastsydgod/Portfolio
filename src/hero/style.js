@@ -19,6 +19,7 @@ export const Main = styled.div`
       margin: 0;
       font-size: 60px;
       animation: colors 10s linear infinite;
+      
       @keyframes colors {
         0% {
           background: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);

@@ -8,11 +8,13 @@ export const Main = styled.div`
   @media (max-width: 800px) {
     flex-direction: column;
   }
+  @media (max-width: 400px) {
+    padding: 20px;
+  }
   .texts {
     width: 60%;
     @media (max-width: 800px) {
       width: 80%;
-      text-align: center;
     }
   }
   .flex {

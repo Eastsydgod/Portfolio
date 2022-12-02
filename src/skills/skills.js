@@ -1,8 +1,4 @@
 import { Main } from "./style.js";
-
-// import js from "./img/js.png";
-// import css from "./img/css.png";
-// import react from "./img/react.png";
 function Skills() {
   const skill = [
     { text: "javascript", color: "teal" },

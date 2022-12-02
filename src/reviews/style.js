@@ -26,5 +26,18 @@ export const Main = styled.div`
         width: 36%;
       }
     }
+    @media (max-width: 400px) {
+      section {
+        flex-direction: column;
+        width: 100%;
+        .first,
+        .second {
+          width: 100%;
+          div {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 `;

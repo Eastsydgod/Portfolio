@@ -2,7 +2,9 @@ import styled from "styled-components";
 export const Style = styled.div`
   padding: 60px;
   background-color: whitesmoke;
-
+  @media (max-width: 400px) {
+    padding: 20px;
+  }
 
   .cards {
     display: flex;
@@ -11,19 +13,18 @@ export const Style = styled.div`
     justify-content: center;
     .card {
       box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-      height: 400px;
+      height: fit-content;
       width: 300px;
-      padding: 12px;
+      padding: 18px 12px;
       margin: 30px;
       border-radius: 10px;
       transform: translateZ(0);
       transition: all 0.25s ease-out;
-      :hover{
+      :hover {
         transform: scale(1.05);
       }
       @media (max-width: 650px) {
-      height: 350px;
-        
+        height: fit-content;
       }
       .img-Container {
         img {
@@ -40,12 +41,12 @@ export const Style = styled.div`
           border-radius: 7px;
         }
       }
-      .icon{
+      .icon {
         color: slategray;
         cursor: pointer;
-        margin:0px 6px;
-        :hover{
-            color: #000;
+        margin: 0px 6px;
+        :hover {
+          color: #000;
         }
       }
     }

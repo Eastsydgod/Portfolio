@@ -6,7 +6,7 @@ function Hero() {
   return (
     <Main id="Home">
       <div className="text">
-        <p className="name">Hi, i'm jemienachukw</p>
+        <p className="name">Hi, i'm jemienachukwu</p>
         <h1>
           Build Your Website <br />
           With me
