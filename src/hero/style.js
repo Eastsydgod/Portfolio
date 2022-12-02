@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Main = styled.div`
   padding: 100px 50px;
   @media (max-width: 650px) {
-    padding: 40px;
+    padding: 20px;
   }
   .text {
     margin: 0 auto;
@@ -19,7 +19,7 @@ export const Main = styled.div`
       margin: 0;
       font-size: 60px;
       animation: colors 10s linear infinite;
-      
+
       @keyframes colors {
         0% {
           background: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
@@ -57,15 +57,11 @@ export const Main = styled.div`
         font-size: 44px;
       }
     }
-    .bottom-text {
-      text-align: center;
-    }
   }
   .icons {
     text-align: center;
     margin-top: 30px;
     a {
-      
       margin: 0 5px;
       transform: translateZ(0);
       transition: all 0.25s ease-out;
