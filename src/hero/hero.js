@@ -7,18 +7,21 @@ function Hero() {
     <Main id="Home">
       <div className="text">
         <p className="name">Hi, i'm jemienachukwu</p>
+        <p>
+          Fontend <b>Software Developer</b>
+        </p>
         <h1>
           Build Your Website <br />
           With me
         </h1>
-        <div className="bottom-text">
+        {/* <div className="bottom-text">
           <p>
             Lorem ipsum maiores totam accusantium laudantium, neque nihil
             corrupti nostrum? dolor sit amet, consectetur adipisicing elit.
             Voluptas fugiat itaque maiores totam accusantium laudantium, neque
             nihil corrupti nostrum? Harum, nihil eius! Iste, quam ipsa!
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="icons">
         <a

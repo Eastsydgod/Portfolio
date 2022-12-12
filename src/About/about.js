@@ -1,24 +1,25 @@
 import { Main } from "./aboutstyle";
 import image from "./IMG-20220502-WA0038.jpg";
+
 function About() {
   return (
-    <Main id='About'>
+    <Main id="About">
       <div className="Texts">
         <div className="texts">
-          <h1><span style={{ color: "coral" }}>About</span> Me </h1>
+          <h1>
+            <span style={{ color: "coral" }}>About</span> Me{" "}
+          </h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-            dolorem sint, officia optio modi minima nam porro, exercitationem
-            ipsam quas atque maiores voluptate! Unde accusamus eveniet ex, rem
-            excepturi ipsam?{" "}
+            I am Ofoegbu Jemienachukwu Jeffery, A software developer from
+            Nigeria. i have always been intrigue on how website and the internet
+            works in general.
           </p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            odio sunt eaque deleniti id, fugit distinctio rem? Porro
-            perspiciatis corrupti veniam ducimus saepe explicabo odit, deserunt
-            blanditiis quis dolorem adipisci excepturi. At tempore modi sunt
-            asperiores, placeat a quos aut?
+            I was opportuned to pursue my curiosity in tech early 2019, where i
+            started with the basics; HTML, CSS and javascript. later advancing
+            into more complex technologies and delving deeper into tech
           </p>
+          <button>View My Resume</button>
         </div>
       </div>
       <div className="Img">

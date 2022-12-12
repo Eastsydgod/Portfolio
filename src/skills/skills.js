@@ -1,4 +1,6 @@
 import { Main } from "./style.js";
+import ColorTabs from "../components/Tabs";
+
 function Skills() {
   const skill = [
     { text: "javascript", color: "teal" },
@@ -25,7 +27,7 @@ function Skills() {
           quos aut?
         </p>
       </div>
-      <div className="flex">
+      {/* <div className="flex">
         {skill.map((item) => (
           <div
             className="icon"
@@ -35,7 +37,8 @@ function Skills() {
             <p>{item.text}</p>
           </div>
         ))}
-      </div>
+      </div> */}
+      <ColorTabs />
     </Main>
   );
 }

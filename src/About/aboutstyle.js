@@ -11,10 +11,20 @@ export const Main = styled.div`
     display: flex;
     height: 400px;
     flex-direction: column;
-    /* background-color: #1c3fa8; */
     .texts {
       width: 80%;
       margin: auto;
+      p {
+        letter-spacing: 1px;
+      }
+      button {
+        background-color: rgb(55, 150, 131);
+        border: none;
+        border-radius: 8px;
+        width: 200px;
+        height: 40px;
+        cursor: pointer;
+      }
     }
   }
 
@@ -24,7 +34,7 @@ export const Main = styled.div`
     .img {
       margin: 0 auto;
       width: 60%;
-      height: 100%;
+      height: 90%;
       display: flex;
       align-items: center;
 
