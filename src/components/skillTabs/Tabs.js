@@ -211,9 +211,9 @@ export default function ColorTabs() {
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab label="Stacks" {...a11yProps(0)} />
-          <Tab label="Languages" {...a11yProps(1)} />
-          <Tab label="Tools" {...a11yProps(2)} />
+          <Tab label="Stacks" {...a11yProps(0)} style={{color:'#8892b0'}}/>
+          <Tab label="Languages" {...a11yProps(1)} style={{color:'#8892b0'}}/>
+          <Tab label="Tools" {...a11yProps(2)} style={{color:'#8892b0'}}/>
         </Tabs>
       </Box>
       <TabStyle>

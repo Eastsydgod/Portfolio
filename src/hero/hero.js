@@ -6,29 +6,21 @@ function Hero() {
   return (
     <Main id="Home">
       <div className="text">
-        <p className="name">Hi, i'm jemienachukwu</p>
-        <p>
-          Fontend <b>Software Developer</b>
-        </p>
+        <p className="name">Hi, my name is </p>
         <h1>
-          Build Your Website <br />
-          With me
+          jemienachukwu. <br />
+          Build Your Website With me
         </h1>
-        {/* <div className="bottom-text">
-          <p>
-            Lorem ipsum maiores totam accusantium laudantium, neque nihil
-            corrupti nostrum? dolor sit amet, consectetur adipisicing elit.
-            Voluptas fugiat itaque maiores totam accusantium laudantium, neque
-            nihil corrupti nostrum? Harum, nihil eius! Iste, quam ipsa!
-          </p>
-        </div> */}
+        <p className="bottom-text">
+          I’m a Fontend <b>Software Developer</b>, specializing in building
+          websites/webapps with exceptional digital experiences
+        </p>
       </div>
       <div className="icons">
         <a
           href="https://github.com/Jemienachukwu"
           target="_blank"
           rel="noreferrer"
-          style={{ color: "#000" }}
         >
           <GitHub />
         </a>
@@ -36,11 +28,10 @@ function Hero() {
           href="https://github.com/Jemienachukwu"
           target="_blank"
           rel="noreferrer"
-          style={{ color: "#000" }}
         >
           <LinkedIn />
         </a>
-        <a href="mailto:jemieofoegbu@gmail.com" style={{ color: "#000" }}>
+        <a href="mailto:jemieofoegbu@gmail.com">
           <Mail />
         </a>
       </div>

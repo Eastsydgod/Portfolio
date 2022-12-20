@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Style } from "./NavStyle.js";
-import { Cancel, Menu } from "@mui/icons-material";
+import { Close, Menu } from "@mui/icons-material";
 
 export default function NavBar() {
   const [Toggle, setToggle] = useState(false);
   function HandelClick() {
     setToggle(!Toggle);
   }
+
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
   function debounce(func, wait, immediate) {
@@ -43,12 +44,8 @@ export default function NavBar() {
   }, [prevScrollPos, visible, handleScroll]);
 
   return (
-    <Style >
+    <Style>
       <nav style={{ top: visible ? "0" : "-60px" }}>
-        <div>
-          <h3>Jemienachukwu</h3>
-        </div>
-
         <div className="navItem">
           <a href="#Home">
             <div>Home</div>
@@ -71,7 +68,7 @@ export default function NavBar() {
         </div>
         <div className="Ham">
           {Toggle ? (
-            <Cancel onClick={HandelClick} />
+            <Close onClick={HandelClick} />
           ) : (
             <Menu onClick={HandelClick} />
           )}
@@ -79,9 +76,6 @@ export default function NavBar() {
       </nav>
       {Toggle && (
         <div className="TemporaryDrawer">
-          <a href="#Contact">
-            <div className="contact">Contact Me</div>
-          </a>
           <a href="#Home">Home</a>
           <a href="#About">About</a>
           <a href="#Skill">Skill</a>
@@ -91,3 +85,7 @@ export default function NavBar() {
     </Style>
   );
 }
+
+
+
+

@@ -1,7 +1,10 @@
 import styled from "styled-components";
 export const Style = styled.div`
+  @media (max-width: 650px) {
+      
+    }
   nav {
-    background: rgba(255, 255, 255, 0);
+    background-color: #0a192f;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.3px);
     -webkit-backdrop-filter: blur(5.3px);
@@ -10,13 +13,15 @@ export const Style = styled.div`
     position: fixed;
     transition: top 0.6s;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+  
     div {
       display: flex;
       align-items: center;
-      h2 {
+      h3 {
         margin-right: 15px;
       }
     }
@@ -28,7 +33,7 @@ export const Style = styled.div`
 
       a {
         height: 100%;
-        color: #000;
+        color: #64ffda;
         text-decoration: none;
         div {
           height: 100%;
@@ -38,7 +43,7 @@ export const Style = styled.div`
           justify-content: center;
 
           :hover {
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid #64ffda;
           }
         }
       }
@@ -48,19 +53,19 @@ export const Style = styled.div`
       }
     }
     .Ham {
-      /* display: none; */
-      visibility: hidden;
+      color: #64ffda;
+      display: none;
       @media (max-width: 650px) {
-        /* display: block; */
-        visibility: visible;
+        display: block;
       }
     }
   }
   .TemporaryDrawer {
+    margin-top: 56px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #0a192f;
     width: 100%;
     a {
       text-decoration: none;

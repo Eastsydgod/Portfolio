@@ -1,7 +1,9 @@
 import styled from "styled-components";
 export const Main = styled.div`
   display: flex;
-  background: #e8e8e8;
+  /* background: #e8e8e8; */
+  background-color: #0a192f;
+  color: #8892b0;
   justify-content: space-between;
   @media (max-width: 800px) {
     display: flex;
@@ -28,20 +30,16 @@ export const Main = styled.div`
     }
   }
 
-  .Img {
-    width: 100%;
+  .img {
+    width: 60%;
+    padding: 0 20px;
 
-    .img {
-      margin: 0 auto;
-      width: 60%;
-      height: 90%;
+    img {
       display: flex;
+      justify-content: center;
       align-items: center;
-
-      img {
-        width: 100%;
-        height: 90%;
-      }
+      width: 80%;
+      border-radius: 12px;
     }
   }
 `;

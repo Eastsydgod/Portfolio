@@ -1,52 +1,155 @@
 import styled from "styled-components";
 export const Style = styled.div`
   padding: 60px;
-  background-color: whitesmoke;
+  background-color: #0a192f;
+
+  color: #8892b0;
   @media (max-width: 400px) {
     padding: 20px;
   }
 
   .cards {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
+    width: 100%;
     .card {
-      box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-      height: fit-content;
-      width: 300px;
-      padding: 18px 12px;
-      margin: 30px;
-      border-radius: 10px;
-      transform: translateZ(0);
-      transition: all 0.25s ease-out;
-      :hover {
-        transform: scale(1.05);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 200px 0;
+      @media (max-width: 800px) {
+        flex-direction: column-reverse;
+        margin: 50px 0;
       }
-      @media (max-width: 650px) {
+      .firstContainer {
+        width: 46%;
+        position: relative;
+        left: 70px;
+        z-index: 1;
+        float: right;
+        @media (max-width: 800px) {
+          left: 0px;
+          width: 90%;
+        }
+        .content {
+          background-color: #112240;
+          border-radius: 5px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+            rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          padding: 15px;
+        }
+        .tech {
+          margin: 15px 0;
+          word-spacing: 10px;
+          letter-spacing: 2px;
+          font-size: x-small;
+        }
+        .icon {
+          cursor: pointer;
+          :hover {
+            color: #ccd6f6;
+          }
+        }
+      }
+      .secondContainer {
+        margin: 0px;
+        width: 40%;
         height: fit-content;
-      }
-      .img-Container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: 70px;
+        @media (max-width: 850px) {
+          width: 50%;
+        }
+        @media (max-width: 800px) {
+          width: 90%;
+          top: 88px;
+          right: 0;
+        }
         img {
           width: 100%;
-        }
-        div {
-          background-color: #fff;
-          position: relative;
-          bottom: 20px;
-          height: 30px;
-          width: fit-content;
-          margin: 0 auto;
-          padding: 5px;
-          border-radius: 7px;
+          filter: grayscale(60%);
+          cursor: pointer;
+          @media (max-width: 800px) {
+            width: 50%;
+            float: right;
+            filter: grayscale(0%);
+          }
+          :hover {
+            filter: grayscale(0%);
+          }
         }
       }
-      .icon {
-        color: slategray;
-        cursor: pointer;
-        margin: 0px 6px;
-        :hover {
-          color: #000;
+    }
+    .cardInverse {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row-reverse;
+      margin: 200px 0;
+      @media (max-width: 800px) {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+      }
+      .firstContainer {
+        width: 46%;
+        position: relative;
+        right: 70px;
+        z-index: 1;
+        text-align: right;
+        @media (max-width: 800px) {
+          right: 0px;
+          width: 90%;
+        }
+        .content {
+          background-color: #112240;
+          text-align: center;
+          border-radius: 5px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+            rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          padding: 15px;
+        }
+        .tech {
+          margin: 15px 0;
+          word-spacing: 10px;
+          letter-spacing: 2px;
+          font-size: x-small;
+        }
+        .icon {
+          cursor: pointer;
+          :hover {
+            color: #ccd6f6;
+          }
+        }
+      }
+      .secondContainer {
+        margin: 0px;
+        width: 40%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 70px;
+        @media (max-width: 850px) {
+          width: 50%;
+        }
+        @media (max-width: 800px) {
+          width: 90%;
+          top: 90px;
+          left: 0;
+        }
+
+        img {
+          width: 100%;
+          filter: grayscale(60%);
+          cursor: pointer;
+          @media (max-width: 800px) {
+            width: 50%;
+            float: left;
+            filter: grayscale(0%);
+          }
+          :hover {
+            filter: grayscale(0%);
+          }
         }
       }
     }

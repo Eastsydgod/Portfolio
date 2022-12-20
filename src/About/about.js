@@ -22,10 +22,9 @@ function About() {
           <button>View My Resume</button>
         </div>
       </div>
-      <div className="Img">
-        <div className="img">
-          <img src={image} alt="img" />
-        </div>
+
+      <div className="img">
+        <img src={image} alt="img" />
       </div>
     </Main>
   );
