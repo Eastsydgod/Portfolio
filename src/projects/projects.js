@@ -63,7 +63,7 @@ const Projects = () => {
               <GitHub className="icon" />
             </div>
             <div className="secondContainer">
-              <a href={item.link} target='_blank'>
+              <a href={item.link} target="_blank" rel="noreferrer">
                 <img src={item.img} alt="img" />
               </a>
             </div>

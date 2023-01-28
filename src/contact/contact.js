@@ -17,7 +17,11 @@ function Contact() {
           to you!
         </p>
       </div>
-      <button>send me a mail</button>
+      <button
+        onClick={() => (window.location = "mailto:jemieofoegbu@gmail.com")}
+      >
+        send me a mail
+      </button>
     </Main>
   );
 }
