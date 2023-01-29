@@ -3,23 +3,24 @@ import styled from "styled-components";
 export const Main = styled.div`
   padding: 100px 0px;
   background-color: #0a192f;
-  
+
   color: #8892b0;
   @media (max-width: 650px) {
-    padding: 20px;
+    padding: 100px 6px;
   }
   .text {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     .name {
       font-weight: bolder;
       @media (max-width: 650px) {
         position: relative;
         top: 60px;
+        margin-bottom: 70px;
+        font-size: 13px;
       }
     }
     h1 {
-      font-size: 46px;
       font-weight: 800;
       background: #000;
       -webkit-text-fill-color: transparent;
@@ -60,21 +61,8 @@ export const Main = styled.div`
         }
       }
       @media (max-width: 650px) {
-        font-size: 40px;
-        margin: 50px 0;
-      }
-    }
-  }
-  .icons {
-    text-align: center;
-    margin-top: 30px;
-    a {
-      margin: 0 5px;
-      transform: translateZ(0);
-      transition: all 0.25s ease-out;
-      color: #ccd6f6;
-      :hover {
-        transform: scale(1.05);
+        font-size: 25px;
+        margin: 40px 0;
       }
     }
   }
@@ -83,6 +71,29 @@ export const Main = styled.div`
     @media (max-width: 650px) {
       width: 90%;
       font-size: 13px;
+    }
+  }
+  .icons {
+    text-align: center;
+    margin-top: 30px;
+    @media (max-width: 400px) {
+      text-align: left;
+      margin-left: 4px;
+    }
+    a {
+      margin: 0 5px;
+      transform: translateZ(0);
+      transition: all 0.25s ease-out;
+      color: #ccd6f6;
+      :hover {
+        transform: scale(1.05);
+      }
+
+      .icons {
+        @media (max-width: 350px) {
+          font-size: 20px;
+        }
+      }
     }
   }
 `;

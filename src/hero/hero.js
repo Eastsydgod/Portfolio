@@ -12,7 +12,7 @@ function Hero() {
           Build Your Website With me
         </h1>
         <p className="bottom-text">
-          I’m a Fontend <b>Software Developer</b>, specializing in building
+          I’m a Frontend <b>Software Developer</b>, specializing in building
           websites/webapps with exceptional digital experiences
         </p>
       </div>
@@ -22,17 +22,17 @@ function Hero() {
           target="_blank"
           rel="noreferrer"
         >
-          <GitHub />
+          <GitHub className="icons" />
         </a>
         <a
           href="https://github.com/Jemienachukwu"
           target="_blank"
           rel="noreferrer"
         >
-          <LinkedIn />
+          <LinkedIn className="icons" />
         </a>
         <a href="mailto:jemieofoegbu@gmail.com">
-          <Mail />
+          <Mail className="icons" />
         </a>
       </div>
     </Main>

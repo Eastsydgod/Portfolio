@@ -1,8 +1,5 @@
 import styled from "styled-components";
 export const Style = styled.div`
-  @media (max-width: 650px) {
-      
-    }
   nav {
     background-color: #0a192f;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -17,7 +14,7 @@ export const Style = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-  
+
     div {
       display: flex;
       align-items: center;
@@ -26,11 +23,9 @@ export const Style = styled.div`
       }
     }
     .navItem {
-      width: 50%;
       height: 50px;
       display: flex;
       justify-content: space-evenly;
-
       a {
         height: 100%;
         color: #64ffda;
@@ -48,7 +43,7 @@ export const Style = styled.div`
         }
       }
 
-      @media (max-width: 650px) {
+      @media (max-width: 600px) {
         display: none;
       }
     }

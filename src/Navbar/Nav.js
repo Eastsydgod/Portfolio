@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Style } from "./NavStyle.js";
-import { Close, Menu } from "@mui/icons-material";
+import DrawerAppBar from "./ham.js";
 
 export default function NavBar() {
-  const [Toggle, setToggle] = useState(false);
-  function HandelClick() {
-    setToggle(!Toggle);
-  }
-
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
   function debounce(func, wait, immediate) {
@@ -67,25 +62,9 @@ export default function NavBar() {
           </a>
         </div>
         <div className="Ham">
-          {Toggle ? (
-            <Close onClick={HandelClick} />
-          ) : (
-            <Menu onClick={HandelClick} />
-          )}
+          <DrawerAppBar />
         </div>
       </nav>
-      {Toggle && (
-        <div className="TemporaryDrawer">
-          <a href="#Home">Home</a>
-          <a href="#About">About</a>
-          <a href="#Skill">Skill</a>
-          <a href="#Projects">Projects</a>
-        </div>
-      )}
     </Style>
   );
 }
-
-
-
-

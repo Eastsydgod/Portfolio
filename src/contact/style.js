@@ -5,6 +5,10 @@ export const Main = styled.div`
   padding: 60px;
   text-align: center;
   width: 100%;
+  @media (max-width: 700px) {
+    padding: 20px;
+    margin-bottom: 100px;
+  }
   h1 {
     color: #64ffda;
     margin-bottom: 20px;
@@ -13,8 +17,9 @@ export const Main = styled.div`
     width: 600px;
     margin: 50px auto;
     @media (max-width: 700px) {
+      font-size: 12px;
+
       width: 95%;
-      /* display: none; */
     }
   }
   button {
@@ -28,6 +33,9 @@ export const Main = styled.div`
     cursor: pointer;
     :hover {
       background-color: rgb(100, 255, 218, 0.3);
+    }
+    @media (max-width: 700px) {
+      width: 90%;
     }
   }
 `;

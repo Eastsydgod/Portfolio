@@ -13,8 +13,7 @@ const htm =
   "https://munachiso.vercel.app/static/media/html5-without-wordmark-color.ed7faa621a87d5ccd4b73edbae4facb7.svg";
 const css =
   "https://munachiso.vercel.app/static/media/css-3-seeklogo.com.4e47c3122b8d2476a02f97dcfcb28640.svg";
-const native =
-  "https://munachiso.vercel.app/static/media/react-native-seeklogo.com.55360266b3781dae00a5a77c8916f82d.svg";
+
 const node =
   "https://munachiso.vercel.app/static/media/nodejs-seeklogo.com.5a3a9ca294db0539884810b6e6eafedd.svg";
 const github =
@@ -141,24 +140,20 @@ const tech = [
     id: 1,
     image: react,
   },
-  {
-    text: "React-Native",
-    id: 2,
-    image: native,
-  },
+
   {
     text: "Nodejs",
-    id: 3,
+    id: 2,
     image: node,
   },
   {
     text: "Expressjs",
-    id: 4,
+    id: 3,
     image: express,
   },
   {
     text: "Nextjs",
-    id: 5,
+    id: 4,
     image: next,
   },
 ];
@@ -211,9 +206,13 @@ export default function ColorTabs() {
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab label="Stacks" {...a11yProps(0)} style={{color:'#8892b0'}}/>
-          <Tab label="Languages" {...a11yProps(1)} style={{color:'#8892b0'}}/>
-          <Tab label="Tools" {...a11yProps(2)} style={{color:'#8892b0'}}/>
+          <Tab label="Stacks" {...a11yProps(0)} style={{ color: "#8892b0" }} />
+          <Tab
+            label="Languages"
+            {...a11yProps(1)}
+            style={{ color: "#8892b0" }}
+          />
+          <Tab label="Tools" {...a11yProps(2)} style={{ color: "#8892b0" }} />
         </Tabs>
       </Box>
       <TabStyle>

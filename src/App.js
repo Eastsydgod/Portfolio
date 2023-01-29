@@ -21,6 +21,7 @@ function App() {
       <Card />
       <Contact />
       <Footer />
+      hiii
     </div>
   );
 }

@@ -3,6 +3,9 @@
   top: 0;
   z-index: 2;
 }
+.App {
+  background-color: #0a192f;
+}
 
 html {
   scroll-behavior: smooth;

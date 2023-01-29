@@ -65,6 +65,7 @@ export const Style = styled.div`
           top: 88px;
           right: 0;
         }
+
         img {
           width: 100%;
           filter: grayscale(60%);
@@ -153,5 +154,11 @@ export const Style = styled.div`
         }
       }
     }
+  }
+  .onGoing {
+    background-color: #000;
+    padding: 10px;
+    height: fit-content;
+    /* display: none; */
   }
 `;
