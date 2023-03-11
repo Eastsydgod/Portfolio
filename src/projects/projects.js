@@ -2,7 +2,7 @@ import React from "react";
 import { Style } from "./style";
 import img1 from "./images/65ed72deac647aa84f75c5af8f6284ab926931b0-1200x900.png";
 import img2 from "./images/90d71de50f2c6659156500e7a4d76a618e1fcd63-1200x900.png";
-import img4 from "./images/b62651ef34a9e54c354ee437545acc348fbf0505-1200x900.png";
+import omazpro from "./images/omazpro.png";
 import portfolio from "./images/portfolio.png";
 import { GitHub } from "@mui/icons-material";
 
@@ -10,7 +10,6 @@ const card = [
   {
     img: img2,
     name: "online store",
-    text: "An online shopping websit, a full mern stack project ",
     gitlink: "https://github.com/Jemienachukwu/e-commerce",
     tech: " React Redux React-Bootstrap Express API NodeJs mongodb",
     about:
@@ -20,25 +19,22 @@ const card = [
     img: img1,
     name: "MediCare",
     ongoing: true,
-    text: "A functioning clinic website, where patients can book appointments with available doctore",
     gitlink: "https://github.com/Jemienachukwu/food-practice",
     tech: " React Styled-Components Express API Heroku",
     about:
       " A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detaile audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more",
   },
   {
-    img: img4,
-    name: "Robofriends",
-    text: "generate cool robots using the robo friends api",
+    img: omazpro,
+    name: "omazpro",
     gitlink: "https://github.com/Jemienachukwu/Robots",
-    tech: " React tachyons-cssToolkit",
+    tech: " Express React styledComponents  ",
     about:
-      " A website for generating random bots using robohash api, generate a unique bot by entering your name and browse through other bots",
+      " Built a website for a local cosmetic store, for buying and selling of cosmetic products and also booking appointments",
   },
   {
     img: portfolio,
     name: "portfolio",
-    text: "my personal portfolio",
     gitlink: "https://github.com/Jemienachukwu/portfolio",
     link: "https://portfolio-jemienachukwu.vercel.app",
     tech: " React Styled-Components material-ui ",
@@ -49,9 +45,9 @@ const card = [
 const Projects = () => {
   return (
     <Style id="Projects">
-      <h1>
-        My Creative <span style={{ color: "dodgerblue" }}>Projects</span>
-      </h1>
+      <div className="header">
+        My <span className="animateText">creative</span> projects
+      </div>
       <div className="cards">
         {card.map((item, i) => (
           <div className={i % 2 === 0 ? "card" : "cardInverse"} key={i}>

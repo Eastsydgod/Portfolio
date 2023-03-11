@@ -1,10 +1,9 @@
 import styled from "styled-components";
 export const Style = styled.div`
   padding: 60px;
-  background-color: #0a192f;
-
+  background-color: #10101a;
   color: #8892b0;
-  @media (max-width: 400px) {
+  @media (max-width: 600px) {
     padding: 20px;
   }
 
@@ -159,6 +158,9 @@ export const Style = styled.div`
     background-color: #000;
     padding: 10px;
     height: fit-content;
-    /* display: none; */
+    @media (max-width: 600px) {
+      padding: 5px;
+      font-size: 6px;
+    }
   }
 `;

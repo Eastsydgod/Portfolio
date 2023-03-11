@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Style } from "./NavStyle.js";
-import DrawerAppBar from "./ham.js";
 
 export default function NavBar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -40,31 +39,30 @@ export default function NavBar() {
 
   return (
     <Style>
-      <nav style={{ top: visible ? "0" : "-60px" }}>
-        <div className="navItem">
-          <a href="#Home">
-            <div>Home</div>
-          </a>
-          <a href="#About">
-            <div>About</div>
-          </a>
+      <div>
+        <nav style={{ top: visible ? "0" : "-90px" }}>
+          <div className="navItem">
+            <a href="#Home">
+              <div>Home</div>
+            </a>
+            <a href="#About">
+              <div>About</div>
+            </a>
 
-          <a href="#Skill">
-            <div>Skill</div>
-          </a>
+            <a href="#Skill">
+              <div>Skill</div>
+            </a>
 
-          <a href="#Projects">
-            <div>Projects </div>
-          </a>
+            <a href="#Projects">
+              <div>Projects </div>
+            </a>
 
-          <a href="#Contact">
-            <div>Contact me</div>
-          </a>
-        </div>
-        <div className="Ham">
-          <DrawerAppBar />
-        </div>
-      </nav>
+            <a href="#Contact">
+              <div>Contact me</div>
+            </a>
+          </div>
+        </nav>
+      </div>
     </Style>
   );
 }

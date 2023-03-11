@@ -16,7 +16,7 @@ import Toolbar from "@mui/material/Toolbar";
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Skill", "Projects", "Contact"];
 
-function DrawerAppBar(props) {
+function Ham(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -27,7 +27,7 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Divider />
-      <List style={{ background: "#0a192f", height: "100vh" }}>
+      <List style={{ background: "#10101a", height: "100vh" }}>
         {navItems.map((item) => (
           <a
             href={`#${item}`}
@@ -51,7 +51,10 @@ function DrawerAppBar(props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav">
+      <AppBar
+        component="nav"
+        style={{ background: "transparent", boxShadow: "none" }}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
@@ -71,7 +74,7 @@ function DrawerAppBar(props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: "block", sm: "none" },
@@ -88,12 +91,8 @@ function DrawerAppBar(props) {
   );
 }
 
-DrawerAppBar.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
+Ham.propTypes = {
   window: PropTypes.func,
 };
 
-export default DrawerAppBar;
+export default Ham;

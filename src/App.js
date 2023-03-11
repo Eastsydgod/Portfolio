@@ -7,6 +7,7 @@ import "./App.css";
 import NavBar from "./Navbar/Nav";
 import Projects from "./projects/projects";
 import Footer from "./Footer/Footer";
+import Ham from "./Navbar/ham";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       <span className="nav">
         <NavBar />
       </span>
+      <div>
+        <Ham />
+      </div>
       <Hero />
       <About />
       <Skills />
@@ -27,29 +31,3 @@ function App() {
 }
 
 export default App;
-
-// import * as React from "react";
-// import { motion, useViewportScroll, useTransform } from "framer-motion";
-
-// export const Example = () => {
-//   const { scrollYProgress } = useViewportScroll();
-//   const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
-
-//   return (
-//     <div className="wrapper">
-//       <motion.div
-//         className="container"
-//         style={{
-//           scale,
-//         }}
-//       >
-//         <motion.div
-//           className="item"
-//           style={{
-//             scaleY: scrollYProgress,
-//           }}
-//         />
-//       </motion.div>
-//     </div>
-//   );
-// };

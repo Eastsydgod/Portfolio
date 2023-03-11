@@ -6,11 +6,13 @@ function Hero() {
   return (
     <Main id="Home">
       <div className="text">
-        <p className="name">Hi, my name is </p>
-        <h1>
-          jemienachukwu. <br />
-          Build Your Website With me
-        </h1>
+        <p className="name">
+          Hi, my name is, <b> jemienachukwu</b>
+        </p>
+        <div className="header">
+          turn your <span className="animatedText">ideas</span> into real life
+          products
+        </div>
         <p className="bottom-text">
           I’m a Frontend <b>Software Developer</b>, specializing in building
           websites/webapps with exceptional digital experiences

@@ -4,10 +4,10 @@ import ColorTabs from "../components/skillTabs/Tabs";
 function Skills() {
   return (
     <Main id="Skill">
-        <h1>
-          <span style={{ color: "dodgerblue" }}>Skills</span> and Experience
-        </h1>
-        <ColorTabs />
+      <div className="header">
+        My skills and <span className="animateText">experience</span>
+      </div>
+      <ColorTabs />
     </Main>
   );
 }

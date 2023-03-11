@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const Main = styled.div`
-  background-color: #0a192f;
+  background-color: #10101a;
   color: #8892b0;
   padding: 60px;
   text-align: center;
