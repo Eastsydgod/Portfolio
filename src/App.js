@@ -8,7 +8,6 @@ import NavBar from "./Navbar/Nav";
 import Projects from "./projects/projects";
 import Footer from "./Footer/Footer";
 import Ham from "./Navbar/ham";
-import Card from "./reviews/card";
 
 function App() {
   return (
@@ -23,7 +22,17 @@ function App() {
       <About />
       <Skills />
       <Projects />
-  <Card/>
+      <div className="subtext">
+        <div className="header">
+          <span className="animateText">Convinced yet ?</span> projects
+        </div>
+        <p>
+          Thanks for stopping by, I’m currently looking to join a new team of
+          creative designers and developers. <br />
+          If you think we might be a good fit for one another, give me a call 🇳🇬
+          or send me an email 📧.
+        </p>
+      </div>
       <Contact />
       <Footer />
       hiii
@@ -32,7 +41,3 @@ function App() {
 }
 
 export default App;
-<<<<<<< HEAD
-=======
-
->>>>>>> af1f99ff3e3349830f4fe888d89c1d6e042e09e1

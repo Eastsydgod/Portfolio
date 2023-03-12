@@ -5,6 +5,7 @@ import img2 from "./images/90d71de50f2c6659156500e7a4d76a618e1fcd63-1200x900.png
 import omazpro from "./images/omazpro.png";
 import portfolio from "./images/portfolio.png";
 import { GitHub } from "@mui/icons-material";
+import { motion } from "framer-motion";
 
 const card = [
   {
@@ -13,16 +14,15 @@ const card = [
     gitlink: "https://github.com/Jemienachukwu/e-commerce",
     tech: " React Redux React-Bootstrap Express API NodeJs mongodb",
     about:
-      "Built a frontend for an e-commerce platform using React, Redux and integrated with an API for data fetching and management, using Mobgodb for the data base I created a list of products that can be updated through the website if user is an admin",
+      "Built a MERN stack e-commerce platform, for buying products. it fearures admin functionalities and a whole lot more ",
   },
   {
     img: img1,
     name: "MediCare",
-    ongoing: true,
     gitlink: "https://github.com/Jemienachukwu/food-practice",
     tech: " React Styled-Components Express API Heroku",
     about:
-      " A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detaile audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more",
+      " A web app for visualizing personalized Spotify data. View your top artists, top tracks, and detaile audio information about each track. on your existing playlists and more",
   },
   {
     img: omazpro,
@@ -52,12 +52,14 @@ const Projects = () => {
         {card.map((item, i) => (
           <div className={i % 2 === 0 ? "card" : "cardInverse"} key={i}>
             <div className="firstContainer">
-              <p>Project :</p>
-              <h3>{item.name}</h3>
-              <div className="content">
-                <p>{item.about}</p>
-              </div>
+              <p>Project : {item.name}</p>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <div className="content">
+                  <p>{item.about}</p>
+                </div>
+              </motion.div>
               <div className="tech">{item.tech}</div>
+
               <a
                 href={item.gitlink}
                 target="_blank"

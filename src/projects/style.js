@@ -56,9 +56,7 @@ export const Style = styled.div`
         justify-content: center;
         position: relative;
         right: 70px;
-        @media (max-width: 850px) {
-          width: 50%;
-        }
+
         @media (max-width: 800px) {
           width: 90%;
           top: 88px;
@@ -67,15 +65,21 @@ export const Style = styled.div`
 
         img {
           width: 100%;
-          filter: grayscale(60%);
+          height: 300px;
+          border-radius: 8px;
+          outline: calc(300px / 2) solid #0009;
+          outline-offset: calc(300px / -2);
+          transition: 0.3s;
           cursor: pointer;
           @media (max-width: 800px) {
-            width: 50%;
+            height: 200px;
+            outline: none;
             float: right;
             filter: grayscale(0%);
           }
           :hover {
-            filter: grayscale(0%);
+            outline: 4px solid #16a085;
+            outline-offset: 10px;
           }
         }
       }
@@ -102,11 +106,14 @@ export const Style = styled.div`
         }
         .content {
           background-color: #112240;
-          text-align: center;
+          text-align: right;
           border-radius: 5px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
             rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
           padding: 15px;
+          @media (max-width: 800px) {
+            text-align: left;
+          }
         }
         .tech {
           margin: 15px 0;
@@ -140,15 +147,21 @@ export const Style = styled.div`
 
         img {
           width: 100%;
-          filter: grayscale(60%);
+          height: 300px;
+          border-radius: 8px;
+          outline: calc(300px / 2) solid #0009;
+          outline-offset: calc(300px / -2);
+          transition: 0.3s;
           cursor: pointer;
           @media (max-width: 800px) {
-            width: 50%;
-            float: left;
+            height: 200px;
+            outline: none;
+            float: right;
             filter: grayscale(0%);
           }
           :hover {
-            filter: grayscale(0%);
+            outline: 4px solid #02aab0;
+            outline-offset: 10px;
           }
         }
       }

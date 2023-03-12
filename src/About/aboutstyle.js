@@ -3,6 +3,9 @@ export const Main = styled.div`
   background-color: #10101a;
   color: #8892b0;
   padding: 60px;
+  @media (max-width: 600px) {
+    padding: 20px;
+  }
   .container {
     width: 60%;
     @media (max-width: 800px) {
