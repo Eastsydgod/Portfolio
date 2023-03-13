@@ -1,6 +1,9 @@
 import styled from "styled-components";
 export const Main = styled.div`
   background-color: #10101a;
+  height: 70vh;
+  display: flex;
+  align-items: center;
   color: #8892b0;
   padding: 60px;
   @media (max-width: 600px) {

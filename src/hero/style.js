@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const Main = styled.div`
   padding: 150px 0px;
   background-color: #10101a;
-  height: 100%;
+  height: 100vh;
   color: #8892b0;
+  position: relative;
   @media (max-width: 650px) {
     padding: 100px 6px;
   }
@@ -29,7 +30,7 @@ export const Main = styled.div`
         background: #000;
         -webkit-text-fill-color: transparent;
         color: #fff;
-        font-size: 60px;
+        /* font-size: 60px; */
         animation: colors 10s linear infinite;
         @keyframes colors {
           0% {
@@ -64,20 +65,16 @@ export const Main = styled.div`
             -webkit-background-clip: text;
           }
         }
-        @media (max-width: 650px) {
-          font-size: 25px;
-          margin: 40px 0;
-        }
       }
       @media (max-width: 650px) {
         font-size: 25px;
-        margin: 40px 0;
       }
     }
   }
   .bottom-text {
     width: 500px;
     @media (max-width: 650px) {
+      margin-top: 30px;
       width: 90%;
       font-size: 13px;
     }
@@ -85,8 +82,11 @@ export const Main = styled.div`
   .icons {
     text-align: center;
     margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+    /* right: 50%;
+    left: 50%; */
     @media (max-width: 400px) {
-      text-align: left;
       margin-left: 4px;
     }
     a {
@@ -98,9 +98,9 @@ export const Main = styled.div`
         transform: scale(1.05);
       }
 
-      .icons {
+      .icon {
         @media (max-width: 350px) {
-          font-size: 20px;
+          font-size: 15px;
         }
       }
     }

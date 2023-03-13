@@ -10,10 +10,11 @@ export const Style = styled.div`
   .cards {
     width: 100%;
     .card {
+      height: 100vh;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin: 200px 0;
+      /* margin: 200px 0; */
       @media (max-width: 800px) {
         flex-direction: column-reverse;
         margin: 50px 0;
