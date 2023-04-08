@@ -14,8 +14,8 @@ export const Style = styled.div`
       display: flex;
       justify-content: space-around;
       align-items: center;
-      /* margin: 200px 0; */
       @media (max-width: 800px) {
+        gap: 80px;
         flex-direction: column-reverse;
         margin: 50px 0;
       }
@@ -92,6 +92,7 @@ export const Style = styled.div`
       flex-direction: row-reverse;
       margin: 200px 0;
       @media (max-width: 800px) {
+        gap: 80px;
         flex-direction: column-reverse;
         margin: 50px 0;
       }
@@ -166,15 +167,6 @@ export const Style = styled.div`
           }
         }
       }
-    }
-  }
-  .onGoing {
-    background-color: #000;
-    padding: 10px;
-    height: fit-content;
-    @media (max-width: 600px) {
-      padding: 5px;
-      font-size: 6px;
     }
   }
 `;

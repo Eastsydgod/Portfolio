@@ -13,12 +13,20 @@ export const Main = styled.div`
     margin: 0 auto;
     width: 90%;
     .name {
-      font-weight: bolder;
+      width: fit-content;
+      padding: 6px;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: lighter;
+      letter-spacing: 1px;
+      font-size: 10px;
+      background-color: #2a2b3880;
+
       @media (max-width: 650px) {
+        padding: 2px;
         position: relative;
         top: 60px;
         margin-bottom: 70px;
-        font-size: 13px;
       }
     }
     .header {
@@ -30,7 +38,6 @@ export const Main = styled.div`
         background: #000;
         -webkit-text-fill-color: transparent;
         color: #fff;
-        /* font-size: 60px; */
         animation: colors 10s linear infinite;
         @keyframes colors {
           0% {
@@ -80,14 +87,19 @@ export const Main = styled.div`
     }
   }
   .icons {
+    display: flex;
+    /* flex-direction: column; */
     text-align: center;
     margin-top: 30px;
     position: absolute;
     bottom: 0;
-    /* right: 50%;
-    left: 50%; */
+    right: 50%;
+
     @media (max-width: 400px) {
       margin-left: 4px;
+      flex-direction: row;
+      bottom: 0;
+      left: 3%;
     }
     a {
       margin: 0 5px;
@@ -99,9 +111,7 @@ export const Main = styled.div`
       }
 
       .icon {
-        @media (max-width: 350px) {
-          font-size: 15px;
-        }
+        font-size: 17px;
       }
     }
   }

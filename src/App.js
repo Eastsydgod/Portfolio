@@ -7,6 +7,7 @@ import NavBar from "./Navbar/Nav";
 import Projects from "./projects/projects";
 import Footer from "./Footer/Footer";
 import Ham from "./Navbar/ham";
+import { Link } from "react-router-dom";
 function App() {
   return (
     <div className="App">
@@ -20,7 +21,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      <div className="subtext">
+      {/* <div className="subtext">
         <div className="header">
           <span className="animateText">Convinced yet ?</span> projects
         </div>
@@ -30,7 +31,10 @@ function App() {
           If you think we might be a good fit for one another, give me a call 🇳🇬
           or send me an email 📧.
         </p>
-      </div>
+        <Link to="/contact">
+          <button className="contactbtn">Contact me</button>
+        </Link>
+      </div> */}
       <Contact />
       <Footer />
       hiii

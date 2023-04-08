@@ -8,14 +8,11 @@ import {
 } from "../components/utils/animations.js";
 
 function Hero() {
-  // const colorText = ;
-  // const title =;
-
   return (
     <Main id="Home">
       <motion.div className="text" initial="initial" animate="animate">
         <motion.p className="name" variants={riseWithFade}>
-          Hi, my name is, <b> jemienachukwu</b>
+          I am actively seeking a frontend Developer role.
         </motion.p>
 
         <motion.span variants={staggerChildren} className="header">
@@ -80,7 +77,7 @@ function Hero() {
           <GitHub className="icon" />
         </a>
         <a
-          href="https://github.com/Jemienachukwu"
+          href="https://linkedin.com/mwlite/in/jemienachukwu-ofoegbu-801703238"
           target="_blank"
           rel="noreferrer"
         >
@@ -94,20 +91,3 @@ function Hero() {
   );
 }
 export default Hero;
-// const AnimateWords = ({ title }) => {
-//   console.log(title.split(" ")[1]);
-//   return (
-//     <motion.span variants={staggerChildren} initial="initial" animate="animate">
-//       {title.split(" ").map((word, i) => (
-//         <div key={i} style={{ display: "inline-block" }}>
-//           <motion.span
-//             variants={wordAnimation}
-//             style={{ display: "inline-block" }}
-//           >
-//             {word + "\u00A0"}
-//           </motion.span>
-//         </div>
-//       ))}
-//     </motion.span>
-//   );
-// };

@@ -3,19 +3,25 @@ export const Main = styled.div`
   background-color: #10101a;
   color: #8892b0;
   padding: 60px;
-  text-align: center;
   width: 100%;
   @media (max-width: 700px) {
     padding: 20px;
     margin-bottom: 100px;
   }
-  h1 {
-    color: #64ffda;
-    margin-bottom: 20px;
+  .contactMe-Text {
+    width: fit-content;
+    padding: 6px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 10px;
+    background-color: #2a2b3880;
   }
   div {
+    /* text-align: center; */
     width: 600px;
-    margin: 50px auto;
+    /* margin: 50px auto; */
     @media (max-width: 700px) {
       font-size: 12px;
 

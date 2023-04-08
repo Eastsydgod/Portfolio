@@ -1,25 +1,22 @@
 import { Main } from "./style.js";
-// import MailOutlineIcon from "@mui/icons-material/MailOutline";
-// import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-// import LocationOnIcon from "@mui/icons-material/LocationOn";
+
 function Contact() {
   return (
     <Main id="Contact">
-      <p>
-        Contact <span style={{ color: "coral" }}>Me</span>
-      </p>
-      <h1>Get In Touch</h1>
+      <p className="contactMe-Text">Contact Me</p>
       <div>
+        <h1>Would You like to work with me ?</h1>
+
         <p>
-          You have an awesome idea you want me to jump on? Feel free to contact
-          me, if you have other request my inbox is always open. Whether you
-          have a question or just want to say hi, I'll try my best to get back
-          to you!
+          Thanks for stopping by, I’m currently looking to join a new team of
+          creative designers and developers. If you think we might be a good fit
+          for one another, give me a call 🇳🇬 or send me an email 📧.
         </p>
+
+        <a href="mailto">
+          <button>send me a mail</button>
+        </a>
       </div>
-      <a href="mailto">
-        <button>send me a mail</button>
-      </a>
     </Main>
   );
 }
