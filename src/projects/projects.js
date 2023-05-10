@@ -5,6 +5,7 @@ import { Style } from "./style";
 import ecommerce from "./images/ecommerce.png";
 import omazpro from "./images/omazpro.png";
 import portfolio from "./images/portfolio.png";
+import game from "./images/game.png";
 import { GitHub } from "@mui/icons-material";
 import { motion } from "framer-motion";
 
@@ -26,6 +27,15 @@ const card = [
     tech: " Express React styledComponents  ",
     about:
       " Built a website for a local cosmetic store, for buying and selling of cosmetic products and also booking appointments",
+  },
+  {
+    img: game,
+    name: "Gamelyd",
+    gitlink: "#",
+    link: "https://gamelyd.co",
+    tech: " Express React  ",
+    about:
+      "Gamelyd is an online plartform that helps in organizing game tournaments in diffrent modes, Gamelyd simplifies and makes it easy for people in diffrent locations to meet and play tournaments together.",
   },
   // {
   //   img: img1,
