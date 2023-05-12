@@ -1,10 +1,7 @@
 import React from "react";
 import { Style } from "./style";
-// import img1 from "./images/65ed72deac647aa84f75c5af8f6284ab926931b0-1200x900.png";
-// import img2 from "./images/90d71de50f2c6659156500e7a4d76a618e1fcd63-1200x900.png";
 import ecommerce from "./images/ecommerce.png";
 import omazpro from "./images/omazpro.png";
-import portfolio from "./images/portfolio.png";
 import game from "./images/game.png";
 import { GitHub } from "@mui/icons-material";
 import { motion } from "framer-motion";
@@ -36,23 +33,6 @@ const card = [
     tech: " Express React  ",
     about:
       "Gamelyd is an online plartform that helps in organizing game tournaments in diffrent modes, Gamelyd simplifies and makes it easy for people in diffrent locations to meet and play tournaments together.",
-  },
-  // {
-  //   img: img1,
-  //   name: "MediCare",
-  //   gitlink: "https://github.com/Jemienachukwu/food-practice",
-  //   tech: " React Styled-Components Express API Heroku",
-  //   about:
-  //     " A web app for visualizing personalized Spotify data. View your top artists, top tracks, and detaile audio information about each track. on your existing playlists and more",
-  // },
-
-  {
-    img: portfolio,
-    name: "portfolio",
-    gitlink: "https://github.com/Jemienachukwu/portfolio",
-    link: "https://portfolio-jemienachukwu.vercel.app",
-    tech: " React Styled-Components material-ui ",
-    about: " A personal website to showcase my projects and other achievements",
   },
 ];
 
