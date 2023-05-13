@@ -24,7 +24,7 @@ export default function NavBar() {
 
     setVisible(
       (prevScrollPos > currentScrollPos &&
-        prevScrollPos - currentScrollPos > 70) ||
+        prevScrollPos - currentScrollPos > 50) ||
         currentScrollPos < 10
     );
 
@@ -39,7 +39,7 @@ export default function NavBar() {
 
   return (
     <Style>
-      <div></div>
+      <h4 className="logo">jemie.Dev</h4>
       <div className="navContainer">
         <nav style={{ top: visible ? "0" : "-90px" }}>
           <div className="navItem">
@@ -51,7 +51,7 @@ export default function NavBar() {
           </div>
         </nav>
       </div>
-      <div>
+      <div className="toggle">
         <button>day</button>
       </div>
     </Style>

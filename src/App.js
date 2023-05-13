@@ -13,7 +13,7 @@ function App() {
       <span className="nav">
         <NavBar />
       </span>
-      <div>
+      <div className="ham">
         <Ham />
       </div>
       <Hero />

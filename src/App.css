@@ -6,7 +6,9 @@
   top: 0;
   z-index: 2;
 }
-
+.ham {
+  display: none;
+}
 .App {
   background-color: #10101a;
   font-family: "Inter", sans-serif;
@@ -22,19 +24,6 @@ html {
   color: #fff;
   font-weight: 800;
   font-size: 30px;
-}
-.contactbtn {
-  padding: 12px;
-  width: 270px;
-  height: 50px;
-  color: #64ffda;
-  background-color: transparent;
-  border: 1px solid #64ffda;
-  border-radius: 2px;
-  cursor: pointer;
-}
-.contactbtn:hover {
-  background-color: rgb(100, 255, 218, 0.3);
 }
 
 .animateText {
@@ -72,20 +61,12 @@ html {
     -webkit-background-clip: text;
   }
 }
-.subtext {
-  padding: 0px 20px;
-  text-align: center;
-  color: #8892b0;
-  margin-bottom: 100px;
-}
+
 @media (max-width: 600px) {
   .header {
     font-size: 20px;
   }
-  .subtext p {
-    font-size: 12px;
-  }
-  .contactbtn {
-    width: 90%;
+  .ham {
+    display: block;
   }
 }

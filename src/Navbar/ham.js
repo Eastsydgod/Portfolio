@@ -26,7 +26,9 @@ function Ham(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Divider />
-      <List style={{ background: "#10101a", height: "100vh" }}>
+      <List
+        style={{ background: "#10101a", height: "100vh", overflow: "hidden" }}
+      >
         {navItems.map((item) => (
           <a
             href={`#${item}`}
@@ -48,7 +50,7 @@ function Ham(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box>
       <CssBaseline />
       <AppBar
         component="nav"
@@ -57,13 +59,13 @@ function Ham(props) {
           boxShadow: "none",
         }}
       >
-        <Toolbar>
+        <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
+          <h4>jemie.Dev</h4>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
-            style={{ background: "#FA7D00" }}
+            sx={{ mr: 2, display: { sm: "none" }, background: "#FA7D00" }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -129,6 +131,7 @@ function Ham(props) {
           </IconButton>
         </Toolbar>
       </AppBar>
+
       <Box component="nav">
         <Drawer
           container={container}

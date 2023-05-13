@@ -2,6 +2,13 @@ import styled from "styled-components";
 export const Style = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: 20px;
+  .logo {
+    color: #fff;
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
   .navContainer {
     display: flex;
     justify-content: center;
@@ -45,6 +52,11 @@ export const Style = styled.div`
           }
         }
       }
+    }
+  }
+  .toggle {
+    @media (max-width: 600px) {
+      display: none;
     }
   }
 `;
