@@ -39,29 +39,20 @@ export default function NavBar() {
 
   return (
     <Style>
-      <div>
+      <div></div>
+      <div className="navContainer">
         <nav style={{ top: visible ? "0" : "-90px" }}>
           <div className="navItem">
-            <a href="#Home">
-              <div>Home</div>
-            </a>
-            <a href="#About">
-              <div>About</div>
-            </a>
-
-            <a href="#Skill">
-              <div>Skill</div>
-            </a>
-
-            <a href="#Projects">
-              <div>Projects </div>
-            </a>
-
-            <a href="#Contact">
-              <div>Contact me</div>
-            </a>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Skill">Skill</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact me</a>
           </div>
         </nav>
+      </div>
+      <div>
+        <button>day</button>
       </div>
     </Style>
   );

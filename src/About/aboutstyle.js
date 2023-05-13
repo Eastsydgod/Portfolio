@@ -21,7 +21,7 @@ export const Main = styled.div`
       }
     }
     button {
-      background-color: rgb(55, 150, 131);
+      background-color: #fa7d00;
       border: none;
       border-radius: 8px;
       width: 200px;

@@ -10,7 +10,6 @@ export const Style = styled.div`
   .cards {
     width: 100%;
     .card {
-      height: 100vh;
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -79,8 +78,8 @@ export const Style = styled.div`
             filter: grayscale(0%);
           }
           :hover {
-            outline: 4px solid #16a085;
-            outline-offset: 10px;
+            outline: 2px solid #000;
+            outline-offset: 6px;
           }
         }
       }
@@ -162,8 +161,8 @@ export const Style = styled.div`
             filter: grayscale(0%);
           }
           :hover {
-            outline: 4px solid #02aab0;
-            outline-offset: 10px;
+            outline: 2px solid #000;
+            outline-offset: 6px;
           }
         }
       }

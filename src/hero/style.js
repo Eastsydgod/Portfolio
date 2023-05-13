@@ -24,7 +24,7 @@ export const Main = styled.div`
       }
     }
     .text {
-      width: 60%;
+      width: 50%;
       @media (max-width: 650px) {
         width: 90%;
       }

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 export const Style = styled.div`
-  div {
+  display: flex;
+  justify-content: space-between;
+  .navContainer {
     display: flex;
     justify-content: center;
 
@@ -15,7 +17,6 @@ export const Style = styled.div`
       position: fixed;
       transition: top 0.6s;
       display: flex;
-      flex-direction: row-reverse;
       justify-content: center;
       align-items: center;
       padding: 0 20px;
@@ -29,19 +30,18 @@ export const Style = styled.div`
         justify-content: space-evenly;
         a {
           height: 100%;
+          /* background-color: red; */
+          border-radius: 4px;
           color: #64ffda;
+          margin: 0px 2px;
           text-decoration: none;
-          div {
-            height: 100%;
-            width: 100px;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            :hover {
-              border-bottom: 1px solid #64ffda;
-            }
+          width: 100px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          :hover {
+            border-bottom: 2px solid #64ffda;
           }
         }
       }
