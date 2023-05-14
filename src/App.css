@@ -16,20 +16,28 @@
   z-index: 2;
   display: none;
 }
-.App {
+.darkMode {
+  /* dark mode */
   background-color: #10101a;
+  color: #8892b0;
+  font-family: "Inter", sans-serif;
+}
+.LightMode {
+  /* light mode */
+  background-color: #fff;
+  color: #000;
   font-family: "Inter", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: #10101a;
+  /* background-color: #10101a; */
 }
 
 .header {
   font-family: "Syne", sans-serif;
   /* font-family: "Space Grotesk", sans-serif; */
-  color: #fff;
+  /* color: #000; */
   font-weight: 800;
   font-size: 30px;
 }
@@ -38,7 +46,6 @@ html {
   font-weight: 800;
   background: #000;
   -webkit-text-fill-color: transparent;
-  color: #fff;
   animation: colors 10s linear infinite;
 }
 @keyframes colors {
@@ -77,4 +84,11 @@ html {
   .ham {
     display: block;
   }
+}
+
+.hamNav {
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(5.3px);
+  -webkit-backdrop-filter: blur(5.3px);
 }

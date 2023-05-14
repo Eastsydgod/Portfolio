@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const Main = styled.div`
   padding: 50px 0px;
-  background-color: #10101a;
-  color: #8892b0;
   position: relative;
   @media (max-width: 650px) {
     padding: 70px 6px;
@@ -23,7 +21,7 @@ export const Main = styled.div`
         width: 70%;
       }
       @media (max-width: 500px) {
-        width: 350px;
+        width: 90%;
       }
     }
     .text {
@@ -35,11 +33,10 @@ export const Main = styled.div`
         width: fit-content;
         padding: 6px;
         border-radius: 4px;
-        color: #fff;
+
         font-weight: lighter;
         letter-spacing: 1px;
         font-size: 10px;
-        background-color: #2a2b3880;
 
         @media (max-width: 650px) {
           padding: 2px;
@@ -49,14 +46,12 @@ export const Main = styled.div`
         }
       }
       .header {
-        color: #fff;
         font-weight: 800;
         font-size: 45px;
         .animatedText {
           font-weight: 800;
           background: #000;
           -webkit-text-fill-color: transparent;
-          color: #fff;
           animation: colors 10s linear infinite;
           @keyframes colors {
             0% {
@@ -93,7 +88,7 @@ export const Main = styled.div`
           }
         }
         @media (max-width: 650px) {
-          font-size: 53px;
+          font-size: 40px;
         }
       }
     }
@@ -125,13 +120,9 @@ export const Main = styled.div`
       margin: 0 5px;
       transform: translateZ(0);
       transition: all 0.25s ease-out;
-      color: #ccd6f6;
+      /* color: #ccd6f6; */
       :hover {
         transform: scale(1.05);
-      }
-
-      .icon {
-        font-size: 17px;
       }
     }
   }

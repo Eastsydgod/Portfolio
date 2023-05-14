@@ -9,16 +9,27 @@ import {
 import gif from "../components/anim.json";
 import Lottie from "lottie-react";
 
-function Hero() {
+function Hero({ isDarkMode }) {
   return (
     <Main id="Home">
       <div className="cont">
         <motion.div className="text" initial="initial" animate="animate">
-          <motion.p className="tag" variants={riseWithFade}>
+          <motion.p
+            className="tag"
+            variants={riseWithFade}
+            style={{
+              background: isDarkMode ? "#2a2b3880" : "#EEEEEE",
+              color: isDarkMode ? "#fff" : "#000",
+            }}
+          >
             I am actively seeking a frontend Developer role.
           </motion.p>
 
-          <motion.span variants={staggerChildren} className="header">
+          <motion.span
+            variants={staggerChildren}
+            className="header"
+            style={{ color: isDarkMode ? "#fff" : "#000" }}
+          >
             <div style={{ display: "inline-block" }}>
               <motion.span
                 variants={wordAnimation}
@@ -82,17 +93,23 @@ function Hero() {
           target="_blank"
           rel="noreferrer"
         >
-          <GitHub className="icon" />
+          <GitHub
+            style={{ color: isDarkMode ? "#ccd6f6" : "#000", fontSize: "17px" }}
+          />
         </a>
         <a
           href="https://linkedin.com/mwlite/in/jemienachukwu-ofoegbu-801703238"
           target="_blank"
           rel="noreferrer"
         >
-          <LinkedIn className="icon" />
+          <LinkedIn
+            style={{ color: isDarkMode ? "#ccd6f6" : "#000", fontSize: "17px" }}
+          />
         </a>
         <a href="mailto:jemieofoegbu@gmail.com">
-          <Mail className="icon" />
+          <Mail
+            style={{ color: isDarkMode ? "#ccd6f6" : "#000", fontSize: "17px" }}
+          />
         </a>
       </div>
     </Main>

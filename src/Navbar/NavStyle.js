@@ -4,7 +4,6 @@ export const Style = styled.div`
   justify-content: space-between;
   padding: 20px;
   .logo {
-    color: #fff;
     @media (max-width: 600px) {
       display: none;
     }
@@ -14,7 +13,6 @@ export const Style = styled.div`
     justify-content: center;
 
     nav {
-      background-color: #2a2b3880;
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(5.3px);
       -webkit-backdrop-filter: blur(5.3px);
@@ -37,9 +35,10 @@ export const Style = styled.div`
         justify-content: space-evenly;
         a {
           height: 100%;
-          /* background-color: red; */
           border-radius: 4px;
-          color: #64ffda;
+          /* color: #64ffda; */
+          /* color: #fff; */
+          font-weight: bolder;
           margin: 0px 2px;
           text-decoration: none;
           width: 100px;
@@ -48,13 +47,13 @@ export const Style = styled.div`
           justify-content: center;
           align-items: center;
           :hover {
-            border-bottom: 2px solid #64ffda;
+            /* border-bottom: 2px solid #64ffda; */
           }
         }
       }
     }
   }
-  .toggle {
+  .drkToggle {
     height: fit-content;
     border-radius: 4px;
     padding: 7px;
@@ -62,9 +61,20 @@ export const Style = styled.div`
       background-color: #2a2b3880;
       cursor: pointer;
     }
-    .icon {
-      color: #fff;
+
+    @media (max-width: 600px) {
+      display: none;
     }
+  }
+  .lghtToggle {
+    height: fit-content;
+    border-radius: 4px;
+    padding: 7px;
+    :hover {
+      background-color: #eeeeee;
+      cursor: pointer;
+    }
+
     @media (max-width: 600px) {
       display: none;
     }

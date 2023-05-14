@@ -1,8 +1,7 @@
 import styled from "styled-components";
 export const Style = styled.div`
   padding: 60px;
-  background-color: #10101a;
-  color: #8892b0;
+
   @media (max-width: 600px) {
     padding: 20px;
   }
@@ -28,8 +27,16 @@ export const Style = styled.div`
           left: 0px;
           width: 90%;
         }
-        .content {
+        .drkContent {
           background-color: #112240;
+          border-radius: 5px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+            rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          padding: 15px;
+        }
+        .lghtContent {
+          background-color: #eeeeee;
+          color: #000;
           border-radius: 5px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
             rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -78,7 +85,7 @@ export const Style = styled.div`
             filter: grayscale(0%);
           }
           :hover {
-            outline: 2px solid #000;
+            outline: 1px solid #eeeeee;
             outline-offset: 6px;
           }
         }
@@ -105,9 +112,20 @@ export const Style = styled.div`
           right: 0px;
           width: 90%;
         }
-        .content {
+
+        .drkContent {
           background-color: #112240;
-          text-align: right;
+          border-radius: 5px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+            rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          padding: 15px;
+          @media (max-width: 800px) {
+            text-align: left;
+          }
+        }
+        .lghtContent {
+          background-color: #eeeeee;
+          color: #000;
           border-radius: 5px;
           box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
             rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -161,7 +179,7 @@ export const Style = styled.div`
             filter: grayscale(0%);
           }
           :hover {
-            outline: 2px solid #000;
+            outline: 1px solid #eeeeee;
             outline-offset: 6px;
           }
         }

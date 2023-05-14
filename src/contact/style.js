@@ -1,7 +1,5 @@
 import styled from "styled-components";
 export const Main = styled.div`
-  background-color: #10101a;
-  color: #8892b0;
   padding: 60px;
   width: 100%;
   @media (max-width: 700px) {
@@ -12,23 +10,21 @@ export const Main = styled.div`
     width: fit-content;
     padding: 6px;
     border-radius: 4px;
-    color: #fff;
+
     font-weight: lighter;
     letter-spacing: 1px;
     font-size: 10px;
-    background-color: #2a2b3880;
   }
   div {
-    /* text-align: center; */
     width: 600px;
-    /* margin: 50px auto; */
+
     @media (max-width: 700px) {
       font-size: 12px;
 
       width: 95%;
     }
   }
-  button {
+  .drkBtn {
     padding: 12px;
     width: 270px;
     height: 50px;
@@ -40,6 +36,21 @@ export const Main = styled.div`
     :hover {
       background-color: rgb(100, 255, 218, 0.3);
     }
+    @media (max-width: 700px) {
+      width: 90%;
+    }
+  }
+  .lghtBtn {
+    padding: 12px;
+    width: 270px;
+    height: 50px;
+
+    border: 1px solid #64ffda;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(100, 255, 218);
+
     @media (max-width: 700px) {
       width: 90%;
     }

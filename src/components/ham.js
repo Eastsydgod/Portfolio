@@ -12,17 +12,19 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import Toolbar from "@mui/material/Toolbar";
 import MenuIcon from "@mui/icons-material/Menu";
-import DarkMode from "../components/DarkMode";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Skill", "Projects", "Contact"];
 
-function Ham(props) {
-  const { window } = props;
+function Ham({ toggleDarkMode, isDarkMode, window }) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+  const color = { color: isDarkMode ? "#fff" : "#000" };
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
@@ -60,18 +62,24 @@ function Ham(props) {
           boxShadow: "none",
         }}
       >
-        <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
-          <h4>jemie.Dev</h4>
+        <Toolbar className="hamNav">
+          <h4 style={color}>jemie.Dev</h4>
           <div style={{ display: "flex", alignItems: "center" }}>
             <div style={{ marginTop: "10px", marginRight: "7px" }}>
-              <DarkMode />
+              <div onClick={toggleDarkMode} className="toggle">
+                {isDarkMode ? (
+                  <LightModeIcon className="icon" style={color} />
+                ) : (
+                  <DarkModeIcon className="icon" style={color} />
+                )}
+              </div>
             </div>
 
             <IconButton
               color="inherit"
               aria-label="open drawer"
               onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" }, color: "#fff" }}
+              sx={{ mr: 2, display: { sm: "none" }, color: color }}
             >
               <MenuIcon />
             </IconButton>

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Style } from "./NavStyle.js";
-import DarkMode from "../components/DarkMode.js";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 
-export default function NavBar() {
+export default function NavBar({ toggleDarkMode, isDarkMode }) {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
@@ -39,21 +40,48 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos, visible, handleScroll]);
 
+  const color = { color: isDarkMode ? "#fff" : "#000" };
   return (
     <Style>
-      <h4 className="logo">jemie.Dev</h4>
+      <h4 style={color} className="logo">
+        jemie.Dev
+      </h4>
       <div className="navContainer">
-        <nav style={{ top: visible ? "0" : "-90px" }}>
+        <nav
+          style={{
+            top: visible ? "0" : "-90px",
+            background: isDarkMode ? "#2a2b3880" : " ",
+          }}
+        >
           <div className="navItem">
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Skill">Skill</a>
-            <a href="#Projects">Projects</a>
-            <a href="#Contact">Contact me</a>
+            <a href="#Home" style={color}>
+              Home
+            </a>
+            <a href="#About" style={color}>
+              About
+            </a>
+            <a href="#Skill" style={color}>
+              Skill
+            </a>
+            <a href="#Projects" style={color}>
+              Projects
+            </a>
+            <a href="#Contact" style={color}>
+              Contact me
+            </a>
           </div>
         </nav>
       </div>
-      <DarkMode />
+      <div
+        onClick={toggleDarkMode}
+        className={isDarkMode ? "drkToggle" : "lghtToggle"}
+      >
+        {isDarkMode ? (
+          <LightModeIcon style={color} />
+        ) : (
+          <DarkModeIcon style={color} />
+        )}
+      </div>
     </Style>
   );
 }

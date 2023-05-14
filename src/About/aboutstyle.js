@@ -1,11 +1,10 @@
 import styled from "styled-components";
 export const Main = styled.div`
-  background-color: #10101a;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #8892b0;
+
   padding: 60px;
   @media (max-width: 900px) {
     padding: 20px;
@@ -16,9 +15,6 @@ export const Main = styled.div`
     width: 45%;
     @media (max-width: 900px) {
       width: 90%;
-    }
-    @media (max-width: 500px) {
-      width: 350px;
     }
   }
   .container {

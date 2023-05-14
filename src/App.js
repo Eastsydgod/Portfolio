@@ -7,21 +7,27 @@ import NavBar from "./Navbar/Nav";
 import Projects from "./projects/projects";
 import Footer from "./Footer/Footer";
 import Ham from "./components/ham";
+import React, { useState } from "react";
+
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const toggleDarkMode = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+  };
   return (
-    <div className="App">
+    <div className={isDarkMode ? "darkMode" : "LightMode"}>
       <span className="nav">
-        <NavBar />
+        <NavBar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       </span>
       <div className="ham">
-        <Ham />
+        <Ham toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       </div>
-      <Hero />
+      <Hero isDarkMode={isDarkMode} />
       <About />
       <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+      <Projects isDarkMode={isDarkMode} />
+      <Contact isDarkMode={isDarkMode} />
+      {/* <Footer /> */}
     </div>
   );
 }

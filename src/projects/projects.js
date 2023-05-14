@@ -36,7 +36,7 @@ const card = [
   },
 ];
 
-const Projects = () => {
+const Projects = ({ isDarkMode }) => {
   return (
     <Style id="Projects">
       <div className="header">
@@ -51,7 +51,7 @@ const Projects = () => {
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                <div className="content">
+                <div className={isDarkMode ? "drkContent" : "lghtContent"}>
                   <p>{item.about}</p>
                 </div>
               </motion.div>

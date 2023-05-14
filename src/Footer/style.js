@@ -5,7 +5,7 @@ export const FooterStyle = styled.div`
 
   .Content {
     display: flex;
-    align-items:center ;
+    align-items: center;
     justify-content: space-evenly;
     padding: 30px 40px;
     background-color: rgb(0, 32, 32);

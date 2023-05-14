@@ -1,9 +1,17 @@
 import { Main } from "./style.js";
 
-function Contact() {
+function Contact({ isDarkMode }) {
   return (
     <Main id="Contact">
-      <p className="contactMe-Text">Contact Me</p>
+      <p
+        className="contactMe-Text"
+        style={{
+          background: isDarkMode ? "#2a2b3880" : "#EEEEEE",
+          color: isDarkMode ? "#fff" : "#000",
+        }}
+      >
+        Contact Me
+      </p>
       <div>
         <h1>Would You like to work with me ?</h1>
 
@@ -14,7 +22,9 @@ function Contact() {
         </p>
 
         <a href="mailto">
-          <button>send me a mail</button>
+          <button className={isDarkMode ? "drkBtn" : "lghtBtn"}>
+            send me a mail
+          </button>
         </a>
       </div>
     </Main>
