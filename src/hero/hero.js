@@ -6,7 +6,7 @@ import {
   staggerChildren,
   wordAnimation,
 } from "../components/utils/animations.js";
-import gif from "../anim.json";
+import gif from "../components/anim.json";
 import Lottie from "lottie-react";
 
 function Hero() {
@@ -24,7 +24,7 @@ function Hero() {
                 variants={wordAnimation}
                 style={{ display: "inline-block" }}
               >
-                turn
+                turning
               </motion.span>{" "}
               <motion.span
                 variants={wordAnimation}

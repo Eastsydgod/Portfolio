@@ -1,8 +1,13 @@
 import { Main } from "./aboutstyle";
+import userAnim from "../components/userAnim.json";
 
+import Lottie from "lottie-react";
 function About() {
   return (
     <Main id="About">
+      <div className="lottie">
+        <Lottie animationData={userAnim} loop={true} />
+      </div>
       <div className="container">
         <p>
           👋Hi, I am Ofoegbu Jemienachukwu Jeffery, a self taught frontend

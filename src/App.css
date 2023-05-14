@@ -1,12 +1,19 @@
 @import url(https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Inter&display=swap);
-
+@import url(https://fonts.googleapis.com/css2?family=Syne&display=swap);
 .nav {
   position: sticky;
   top: 0;
   z-index: 2;
 }
+.logo {
+  color: #fff;
+  font-family: "Syne", sans-serif;
+}
 .ham {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   display: none;
 }
 .App {
@@ -20,7 +27,8 @@ html {
 }
 
 .header {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Syne", sans-serif;
+  /* font-family: "Space Grotesk", sans-serif; */
   color: #fff;
   font-weight: 800;
   font-size: 30px;

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Style } from "./NavStyle.js";
+import DarkMode from "../components/DarkMode.js";
 
 export default function NavBar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+
   function debounce(func, wait, immediate) {
     var timeout;
     return function () {
@@ -51,9 +53,7 @@ export default function NavBar() {
           </div>
         </nav>
       </div>
-      <div className="toggle">
-        <button>day</button>
-      </div>
+      <DarkMode />
     </Style>
   );
 }

@@ -6,26 +6,29 @@ export const Main = styled.div`
   color: #8892b0;
   position: relative;
   @media (max-width: 650px) {
-    padding: 100px 6px;
+    padding: 70px 6px;
   }
   .cont {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    @media (max-width: 650px) {
+    @media (max-width: 900px) {
       flex-direction: column-reverse;
     }
     .lottie {
       width: 450px;
       display: flex;
       justify-content: center;
-      @media (max-width: 650px) {
+      @media (max-width: 900px) {
+        width: 70%;
+      }
+      @media (max-width: 500px) {
         width: 350px;
       }
     }
     .text {
       width: 50%;
-      @media (max-width: 650px) {
+      @media (max-width: 900px) {
         width: 90%;
       }
       .tag {
@@ -90,7 +93,7 @@ export const Main = styled.div`
           }
         }
         @media (max-width: 650px) {
-          font-size: 25px;
+          font-size: 53px;
         }
       }
     }

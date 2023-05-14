@@ -6,7 +6,7 @@ import "./App.css";
 import NavBar from "./Navbar/Nav";
 import Projects from "./projects/projects";
 import Footer from "./Footer/Footer";
-import Ham from "./Navbar/ham";
+import Ham from "./components/ham";
 function App() {
   return (
     <div className="App">

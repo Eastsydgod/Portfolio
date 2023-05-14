@@ -55,6 +55,16 @@ export const Style = styled.div`
     }
   }
   .toggle {
+    height: fit-content;
+    border-radius: 4px;
+    padding: 7px;
+    :hover {
+      background-color: #2a2b3880;
+      cursor: pointer;
+    }
+    .icon {
+      color: #fff;
+    }
     @media (max-width: 600px) {
       display: none;
     }
