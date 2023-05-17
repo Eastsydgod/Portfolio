@@ -5,8 +5,6 @@ import Contact from "./contact/contact";
 import "./App.css";
 import NavBar from "./Navbar/Nav";
 import Projects from "./projects/projects";
-import Footer from "./Footer/Footer";
-import Ham from "./components/ham";
 import React, { useState } from "react";
 
 function App() {
@@ -19,9 +17,9 @@ function App() {
       <span className="nav">
         <NavBar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
       </span>
-      <div className="ham">
+      {/* <div className="ham">
         <Ham toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-      </div>
+      </div> */}
       <Hero isDarkMode={isDarkMode} />
       <About />
       <Skills />
