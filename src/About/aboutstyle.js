@@ -7,6 +7,8 @@ export const Main = styled.div`
 
   padding: 60px;
   @media (max-width: 900px) {
+    height: 100%;
+    margin: 50px 0px;
     padding: 20px;
     justify-content: unset;
     flex-direction: column;

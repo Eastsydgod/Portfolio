@@ -12,6 +12,7 @@ export const Style = styled.div`
   nav {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.3px);
+    backdrop-filter: blur(5.3px);
     -webkit-backdrop-filter: blur(5.3px);
     height: 80px;
     width: 100%;
@@ -77,6 +78,7 @@ export const Style = styled.div`
   .mobileNav {
     display: none;
     background: transparent;
+    height: fit-content;
     box-shadow: none;
     @media (max-width: 600px) {
       display: block;
@@ -89,6 +91,28 @@ export const Style = styled.div`
           margin-top: 10px;
           margin-right: 7px;
         }
+      }
+    }
+  }
+  .dropDownContainer {
+    height: 150px;
+
+    width: 100%;
+    div {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      button {
+        margin: 0px 8px;
+        border: none;
+        cursor: pointer;
+        width: fit-content;
+        height: 40px;
+        padding: 0px 20px;
+        border-radius: 4px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-size: 10px;
       }
     }
   }

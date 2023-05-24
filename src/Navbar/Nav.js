@@ -4,7 +4,7 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { AppBar, IconButton, Toolbar } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-
+import CloseIcon from "@mui/icons-material/Close";
 export default function NavBar({ toggleDarkMode, isDarkMode }) {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
@@ -25,15 +25,14 @@ export default function NavBar({ toggleDarkMode, isDarkMode }) {
       if (callNow) func.apply(context, args);
     };
   }
+
   const handleScroll = debounce(() => {
     const currentScrollPos = window.pageYOffset;
-
     setVisible(
       (prevScrollPos > currentScrollPos &&
         prevScrollPos - currentScrollPos > 50) ||
         currentScrollPos < 10
     );
-
     setPrevScrollPos(currentScrollPos);
   }, 100);
 
@@ -89,7 +88,6 @@ export default function NavBar({ toggleDarkMode, isDarkMode }) {
           </div>
         </div>
       </nav>
-
       <AppBar component="nav" className="mobileNav">
         <Toolbar className="hamNav">
           <h4 style={color}>jemie.Dev</h4>
@@ -108,24 +106,44 @@ export default function NavBar({ toggleDarkMode, isDarkMode }) {
               aria-label="open drawer"
               sx={{ mr: 2, display: { sm: "none" }, color: color }}
             >
-              <MenuIcon />
+              {show ? <CloseIcon /> : <MenuIcon />}
             </IconButton>
           </div>
         </Toolbar>
       </AppBar>
       {show && (
         <div
+          className="dropDownContainer"
           style={{
-            height: "200px",
-            width: "100%",
-            background: "white",
-            position: "relative",
-            top: "20",
-            zIndex: "2",
+            background: isDarkMode ? "#10101a" : "#fff",
           }}
         >
-          jsjajajjaj jsjjs
-          <p>my name is jomsnk</p>
+          <div
+            style={{
+              marginTop: "100px",
+            }}
+          >
+            <a href="mailto:jemieofoegbu@gmail.com">
+              <button
+                style={{
+                  background: isDarkMode ? "#2a2b3880" : "#EEEEEE",
+                  color: isDarkMode ? "#fff" : "#000",
+                }}
+              >
+                Contact Me
+              </button>
+            </a>
+            <a href="https://docs.google.com/document/d/1mtHza1j34uL7jsPPLae6cK0kcG_M4AOBflXvnIoykwY/edit?usp=sharing">
+              <button
+                style={{
+                  background: isDarkMode ? "#2a2b3880" : "#EEEEEE",
+                  color: isDarkMode ? "#fff" : "#000",
+                }}
+              >
+                Read My CV
+              </button>
+            </a>
+          </div>
         </div>
       )}
     </Style>
