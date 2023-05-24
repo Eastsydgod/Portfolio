@@ -21,7 +21,7 @@ function Contact({ isDarkMode }) {
           for one another, give me a call 🇳🇬 or send me an email 📧.
         </p>
 
-        <a href="mailto">
+        <a href="mailto:jemieofoegbu@gmail.com">
           <button className={isDarkMode ? "drkBtn" : "lghtBtn"}>
             send me a mail
           </button>

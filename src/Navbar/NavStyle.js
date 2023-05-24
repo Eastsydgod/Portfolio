@@ -2,55 +2,50 @@ import styled from "styled-components";
 export const Style = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+
   .logo {
     @media (max-width: 600px) {
       display: none;
     }
   }
-  .navContainer {
+
+  nav {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    height: 80px;
+    width: 100%;
+    padding: 2px 50px;
+    position: fixed;
+    transition: top 0.6s;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      margin: 0px 12px;
+      border: none;
+      cursor: pointer;
+      width: fit-content;
+      height: 40px;
+      padding: 0px 20px;
+      border-radius: 4px;
+      font-weight: lighter;
+      letter-spacing: 1px;
+      font-size: 10px;
+      :hover {
+        font-weight: bold;
+      }
+    }
+    @media (max-width: 600px) {
+      padding: 2px 20px;
 
-    nav {
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(5.3px);
-      -webkit-backdrop-filter: blur(5.3px);
-      height: 60px;
-      margin-top: 30px;
-      border-radius: 12px;
-      position: fixed;
-      transition: top 0.6s;
+      display: none;
+    }
+
+    .navItem {
+      height: 50px;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0 20px;
-      @media (max-width: 600px) {
-        display: none;
-      }
-
-      .navItem {
-        height: 50px;
-        display: flex;
-        justify-content: space-evenly;
-        a {
-          height: 100%;
-          border-radius: 4px;
-          /* color: #64ffda; */
-          /* color: #fff; */
-          font-weight: bolder;
-          margin: 0px 2px;
-          text-decoration: none;
-          width: 100px;
-          cursor: pointer;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          :hover {
-            /* border-bottom: 2px solid #64ffda; */
-          }
-        }
-      }
+      justify-content: space-evenly;
     }
   }
   .drkToggle {
@@ -77,6 +72,24 @@ export const Style = styled.div`
 
     @media (max-width: 600px) {
       display: none;
+    }
+  }
+  .mobileNav {
+    display: none;
+    background: transparent;
+    box-shadow: none;
+    @media (max-width: 600px) {
+      display: block;
+    }
+    .hamNav {
+      div {
+        display: flex;
+        align-items: center;
+        .toggle {
+          margin-top: 10px;
+          margin-right: 7px;
+        }
+      }
     }
   }
 `;
