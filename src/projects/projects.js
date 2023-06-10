@@ -11,7 +11,7 @@ const card = [
     img: ecommerce,
     name: "online store",
     gitlink: "https://github.com/Jemienachukwu/e-commerce",
-    link: "https://techshop-fiqo.onrender.com/",
+    link: "https://ecommerce-frontend-omega-one.vercel.app/",
     tech: " React Redux React-Bootstrap Express API NodeJs mongodb",
     about:
       "Built a MERN stack e-commerce platform, for buying products. it fearures admin functionalities and a whole lot more ",
