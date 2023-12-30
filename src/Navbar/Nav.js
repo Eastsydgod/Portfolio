@@ -52,7 +52,7 @@ export default function NavBar({ toggleDarkMode, isDarkMode }) {
         }}
       >
         <h4 style={color} className="logo">
-          jemie.Dev
+          Eastsyd
         </h4>
         <div className="navItem">
           <a href="mailto:jemieofoegbu@gmail.com">
