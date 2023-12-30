@@ -55,7 +55,7 @@ export default function NavBar({ toggleDarkMode, isDarkMode }) {
           Eastsyd
         </h4>
         <div className="navItem">
-          <a href="mailto:jemieofoegbu@gmail.com">
+          <a href="mailto:jamesnuel247@gmail.com">
             <button
               style={{
                 background: isDarkMode ? "#2a2b3880" : "#EEEEEE",
